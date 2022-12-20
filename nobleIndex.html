@@ -37,6 +37,38 @@
                 background: rgba(0, 0, 0, 0.25);
                 color: #fff;
             }
+
+        .dashed-border {
+            border: 5px double #000;
+            padding: 20px;
+            width: 75%;
+            margin: 1em auto 0;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .red-text {
+            color: #ff0000;
+        }
+
+        .left-corner {
+            float: left;
+        }
+
+        .right-corner {
+            float: right;
+            font-style: italic;
+        }
+
+        .left-corner.flashing {
+            animation: flashing 2s infinite;
+        }
+
+        @keyframes flashing {
+            50% {
+                visibility: hidden;
+            }
+        }
     </style>
 </head>
 <body style="background: #ccccff; font-family: Arial, Helvetica, sans-serif; width: 100%;">
@@ -51,8 +83,8 @@
                 </div>
             </div>
             <div style="width: 50%;">
-                <div style="border: 1px solid #9cbfff; border-radius: 10px; background: linear-gradient(to bottom, #9cbfff, #5e7399); margin: auto; width: 100%; text-align: center; box-shadow: 10px 5px 20px 2px rgba(0, 0, 0, 0.5); ">
-                    <h1 style="color: #00488f; text-shadow: 0 0 3px #FFFF00; font-size: 2.5em; font-weight: bold; margin: .25em;">The Central Ohio<br />Radio Club, Inc.</h1>
+                <div style="border: 3px solid #9cbfff; border-radius: 30px; background: linear-gradient(to bottom, #9cbfff, #5e7399); margin: auto; width: 100%; text-align: center; box-shadow: 10px 5px 20px 2px rgba(0, 0, 0, 0.5); ">
+                    <h1 style="color: #00488f; text-shadow: 0 0 3px #FFFF00; font-size: 2.5em; font-weight: bold; letter-spacing: 2px; line-height: 85%; margin: .25em;">The Central Ohio<br />Radio Club, Inc.</h1>
                     <h2 style="color: #000; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-size: 1em; font-weight: normal;">Home of the Central Ohio Severe Weather Net</h2>
                 </div>
                 <div style="text-align: center; padding-top: 0.5em;">An <a href="http://www.arrl.org/" target="_blank">ARRL</a> Special Service Club</div>
@@ -77,7 +109,20 @@
             </ul>
         </nav>
     </header>
-    <content></content>
+    <content>
+        <news>
+            <div class="dashed-border">
+                <p>The next Tech-Net will be on 12/4 at 7:30 on the 146.76 repeater. Topic is on D-Star.<br />
+                   Files to go with the topic is <a href="./techNetContent/KE8BZW%20D-STAR%20Presentation.pdf" target="_blank">HERE</a> and <a href="./techNetContent/KE8BZW%20D-STAR%20Presentation.pptx" target="_blank">HERE</a>
+                </p>
+                <p>The six meter repeater is still temporarily off the air. Repairs are progressing.</p>
+                <p>An updated schedule of CORC sponsored VE Exams is listed below!!!</p>
+                <div class="red-text left-corner flashing">NEW INFO!</div>
+                <div class="red-text right-corner">Updated 12-4-22</div>
+            </div>
+        </news>
+
+    </content>
     <footer></footer>
 </body>
 </html>
