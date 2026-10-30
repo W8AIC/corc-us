@@ -4,182 +4,130 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CORC - The Central Ohio Radio Club</title>
+    <meta name="description" content="The Central Ohio Radio Club, Inc. (W8AIC), home of the Central Ohio Severe Weather Net." />
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
-<body style="background: #ccccff; font-family: Arial, Helvetica, sans-serif; width: 100%;">
-    <header>
-        <div style="display: flex; justify-content: center; margin-bottom: 1em;">
-            <div style="width: 25%;">
-                <div style="text-align: center;">
-                    <img src="./images/CORC-herald.png" alt="Central Ohio Radio Club seal" /><img src="./svg/ARRL_logo.svg" alt="ARRL logo" style="height: 98px;" /><br />
-                    <span style="align-content: center; font-size: 0.75em; text-align: center;">
-                        More than 50 Years of Service to the<br />Amateur Community
-                    </span>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page home">
+        <header class="site-header">
+            <div class="header-logos">
+                <div class="logo-row">
+                    <img class="seal" src="./images/CORC-seal-lightblue.png" alt="The Central Ohio Radio Club seal" width="104" height="107" />
+                    <img class="arrl" src="./svg/ARRL_logo.svg" alt="ARRL diamond logo" width="44" height="98" />
                 </div>
+                <p class="tagline">More than 50 Years of Service to the<br />Amateur Community</p>
             </div>
-            <div style="width: 50%;">
-                <div style="border: 3px solid #9cbfff; border-radius: 30px; background: linear-gradient(to bottom, #9cbfff, #5e7399); margin: auto; width: 100%; text-align: center; box-shadow: 10px 5px 20px 2px rgba(0, 0, 0, 0.5); ">
-                    <h1 style="color: #00488f; text-shadow: 0 0 3px #FFFF00; font-size: 2.5em; font-weight: bold; letter-spacing: 2px; line-height: 85%; margin: .25em;">The Central Ohio<br />Radio Club, Inc.</h1>
-                    <h2 style="color: #000; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-size: 1em; font-weight: normal;">Home of the Central Ohio Severe Weather Net</h2>
+            <div class="header-title">
+                <div class="title-banner">
+                    <p class="site-name">The Central Ohio <span class="line2">Radio Club, Inc.</span></p>
+                    <p class="site-motto">Home of the Central Ohio Severe Weather Net</p>
                 </div>
-                <div style="text-align: center; padding-top: 0.5em;">An <a href="https://www.arrl.org/" target="_blank" rel="noopener">ARRL</a> Special Service Club</div>
+                <p class="arrl-club">An <a href="https://www.arrl.org/" target="_blank" rel="noopener">ARRL</a> Special Service Club</p>
             </div>
-            <div style="width: 25%; text-align: center;">
-                <div>
-                    <img src="./images/CORC-tower.png" alt="The Central Ohio Radio Club tower graphic" />
-                </div>
+            <div class="header-tower">
+                <img src="./images/CORC-tower.png" alt="Radio tower at sunset with the words The Central Ohio Radio Club" width="149" height="139" />
             </div>
-        </div>
-        <nav aria-label="Main">
+        </header>
+        <nav class="site-nav" aria-label="Main">
             <ul>
-                <li><a href="./nobleIndex.html" aria-current="page">Home</a></li>
-                <li><a href="./SiteInfo.html">Site Info</a></li>
-                <li><a href="./Publications.html">Publications</a></li>
-                <li><a href="./Membership.html">Join Now</a></li>
-                <li><a href="./IRLP.html">IRLP</a></li>
-                <li><a href="./TechNet.html">Tech Net</a></li>
-                <li><a href="./D-STAR.html">D-STAR</a></li>
-                <li><a href="./Links.html">Links</a></li>
-                <li><a href="./Contact.html">Contact</a></li>
+                <li><a href="./nobleIndex.html" aria-current="page"><span>Home</span></a></li>
+                <li><a href="./SiteInfo.html"><span>Site Info</span></a></li>
+                <li><a href="./Publications.html"><span>Publications</span></a></li>
+                <li><a href="./Membership.html"><span>Join Now</span></a></li>
+                <li><a href="./IRLP.html"><span>IRLP</span></a></li>
+                <li><a href="./TechNet.html"><span>Tech Net</span></a></li>
+                <li><a href="./D-STAR.html"><span>D-STAR</span></a></li>
+                <li><a href="./Links.html"><span>Links</span></a></li>
+                <li><a href="./Contact.html"><span>Contact</span></a></li>
             </ul>
         </nav>
-    </header>
 
-    <section class="news" aria-label="Club news">
-        <div class="dashed-border">
-            <p class="news">The next Tech-Net will be Sunday, November 1 at 7:30 PM on the 146.76 repeater, with the topic being an open discussion!</p>
-            <p class="news">The 2027 ARRL VE test session dates are posted &mdash; see the <a href="#ve-testing">VE test schedule</a> below.</p>
-            <div class="red-text left-corner flashing">NEW INFO!</div>
-            <div class="red-text right-corner">Updated 10-20-26</div>
-        </div>
-    </section>
+        <main id="main">
+            <section class="announcement" aria-label="Club news">
+                <p>The next Tech-net will be Sunday November 1st with the topic being an open discussion!</p>
+                <div class="flags">
+                    <span class="new-info">NEW INFO!</span>
+                    <span class="updated">Updated &nbsp;10-20-26</span>
+                </div>
+            </section>
 
-    <main>
-        <h1 class="inset-heading">Welcome</h1>
+            <h1 class="welcome">Welcome</h1>
 
-        <h4 class="noteGreen">Note: Most underlined words on this site are HTML links and will take you to that page or item!</h4>
+            <p class="green-note">Note: &nbsp;Most <span style="text-decoration: underline;">underlined</span> words on this site are HTML links and will take you to that page or item!</p>
 
-        <p>The Directors of The Central Ohio Radio Club would like to thank you for browsing this page and hope this information will answer most of the questions you might have about the club.</p>
+            <div class="home-text">
+                <p class="intro">The Directors of The Central Ohio Radio Club would like to thank you for browsing this page and hope this information will answer most of the questions you might have about the club.</p>
 
-        <h2 class="section-heading">Repeaters</h2>
+                <p>&ldquo;CORC&rdquo; owns and maintains amateur radio repeaters on the 6 and 70cm. bands. The frequency and callsigns of these repeaters are starting on 2 meter, are: 146.76, W8AIC/R; 146.97, W8RRJ/R; 147.33, W8NBA/R. On 6 meter, we have the W8RRJ/R repeater on 52.70 with 3 inputs on 52.94, 51.70 and 53.70 and on 70cm., we have the 444.200, W8AIC/R &nbsp;repeater. All of these repeaters use multiple receiver sites on commercial towers to insure clear reception. All repeaters also encode 123.0 Hz. tone PL on the output and decode on most receivers. The exception is the 444.200 repeater which uses 151.4 Hz. encode and decode. For best reception and to insure accessing multiple receivers, please turn your PL tone on. These receiver sites are spread throughout Franklin, Licking, Delaware and Logan counties. Please refer to the <a href="./SiteInfo.html">Site Info</a> page for more information.</p>
 
-        <p>
-            "CORC" owns and maintains amateur radio repeaters on the 2-meter, 6-meter and 70cm bands. The frequencies and callsigns of these repeaters, starting on 2-meter, are: 146.76, W8AIC/R; 146.97, W8RRJ/R; 147.33, W8NBA/R. On 6-meter, we have the W8RRJ/R repeater on 52.70 with 3 inputs on 52.94, 51.70 and 53.70, and on 70cm, we have the 444.200, W8AIC/R repeater. All of these repeaters use multiple receiver sites on commercial towers to ensure clear reception. All repeaters also encode 123.0 Hz tone PL on the output and decode on most receivers. The exception is the 444.200 repeater, which uses 151.4 Hz encode and decode. For best reception and to ensure accessing multiple receivers, please turn your PL tone on. These receiver sites are spread throughout Franklin, Licking, Delaware and Logan counties. Please refer to the <a href="./SiteInfo.html">Site Info page</a> for more information.
-        </p>
+                <p>CORC also owns and maintains the <a href="./D-STAR.html">W8CMH</a> D-STAR 145.49 and 444.000 repeaters which have been upgraded to a G-3 (Generation 3) D-Star Gateway, as well as the K8NIO/R on 442.800 with 151.4 tone PL. The DSTAR registration page is at: <a href="https://w8cmh.no-ip.org/Dstar.do" target="_blank" rel="noopener">https://w8cmh.no-ip.org/Dstar.do</a></p>
 
-        <table class="data-table">
-            <caption>CORC repeaters at a glance</caption>
-            <thead>
-                <tr><th scope="col">Frequency (MHz)</th><th scope="col">Callsign</th><th scope="col">Tone (Hz)</th><th scope="col">Notes</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>146.76</td><td>W8AIC/R</td><td>123.0</td><td>Central Ohio Severe Weather Net; CORC Tech Net</td></tr>
-                <tr><td>146.97</td><td>W8RRJ/R</td><td>123.0</td><td>Primary frequency of the Central Ohio Traffic Net</td></tr>
-                <tr><td>147.33</td><td>W8NBA/R</td><td>123.0</td><td>IRLP node 8094 (posted as temporarily off the air)</td></tr>
-                <tr><td>52.70</td><td>W8RRJ/R</td><td>123.0</td><td>6 meters; inputs on 52.94, 51.70 and 53.70</td></tr>
-                <tr><td>444.200</td><td>W8AIC/R</td><td>151.4</td><td>70cm</td></tr>
-                <tr><td>145.49 and 444.000</td><td>W8CMH</td><td>&mdash;</td><td>D-STAR, G-3 gateway</td></tr>
-                <tr><td>442.800</td><td>K8NIO/R</td><td>151.4</td><td>70cm</td></tr>
-            </tbody>
-        </table>
+                <p>The <span class="u">146.76</span> Repeater is host to the <a href="https://centralohiosevereweathernetwork.org/" target="_blank" rel="noopener">Central Ohio Severe Weather Net (COSWN)</a> in which amateur radio &quot;spotters&quot; relay weather information directly to the National Weather Service in Wilmington, Ohio, through a controlled net. This information is used to help the NWS in deciding where and when to issue severe watches and warnings. The Weather Watch holds its weekly training nets on Tuesdays at 7:30 during spring and Summer months on the .76 machine. The net is also brought up any time it is requested by the National Weather Service.</p>
 
-        <p>
-            CORC also owns and maintains the W8CMH D-STAR 145.49 and 444.000 repeaters, which have been upgraded to a G-3 (Generation 3) D-STAR Gateway, as well as K8NIO/R on 442.800 with 151.4 Hz tone PL. Register for the gateway on the <a href="https://w8cmh.no-ip.org/Dstar.do" target="_blank" rel="noopener">W8CMH D-STAR registration page</a>, and read more on our <a href="./D-STAR.html">D-STAR page</a>.
-        </p>
+                <p>The <span class="u">146.97</span> Repeater is the &nbsp;Primary frequency for the <a href="https://www.cotn.us/" target="_blank" rel="noopener">Central Ohio Traffic Net (COTN)</a> which meets daily at 7:15 PM. For more information click on the highlighted link above. The first alternate frequency is 146.76 . The second alternate frequency is 147.33</p>
 
-        <h2 class="section-heading">Nets</h2>
+                <p>The <span class="u">147.33</span> Repeater hosts the IRLP Node 8094 which links it to other nodes all over the world. Please refer to the <a href="./IRLP.html">IRLP page</a> for more linking information. &nbsp;(Note: It is temporarily off the air)</p>
 
-        <p>
-            The 146.76 repeater is host to the <a href="https://centralohiosevereweathernetwork.org/" target="_blank" rel="noopener">Central Ohio Severe Weather Net (COSWN)</a>, in which amateur radio "spotters" relay weather information directly to the National Weather Service in Wilmington, Ohio, through a controlled net. This information is used to help the NWS in deciding where and when to issue severe watches and warnings. The Weather Watch holds its weekly training nets on Tuesdays at 7:30 PM during the spring and summer months on the .76 machine. The net is also brought up any time it is requested by the National Weather Service.
-        </p>
+                <p>Full Membership entitles you to use of the &quot;CORC&quot; repeaters, regular copies of the CORC Newsletter, and a vote at the Annual Meeting of the Corporation in the first quarter of the year. &nbsp;CORC also has two other meetings, one in spring and the other one in fall</p>
 
-        <p>
-            The 146.97 repeater is the primary frequency for the <a href="https://www.cotn.us/" target="_blank" rel="noopener">Central Ohio Traffic Net (COTN)</a>, which meets daily at 7:15 PM. The first alternate frequency is 146.76 and the second alternate frequency is 147.33.
-        </p>
+                <p class="button-line date"><span class="label">To get the date and location of the next dinner click</span>
+                    <a class="pill-button" href="https://corc.us/meeting%206-7-26.txt" target="_blank" rel="noopener" aria-label="Date and location of the next dinner (meeting notice)">Date</a></p>
+                <p class="button-line map"><span class="label">A map to the meeting can be found</span>
+                    <a class="pill-button" href="https://corc.us/meetmap.pdf" target="_blank" rel="noopener" aria-label="Map to the meeting at Genoa Township Hall (PDF)">MAP</a></p>
 
-        <p>
-            The 147.33 repeater hosts IRLP Node 8094, which links it to other nodes all over the world. Please refer to the <a href="./IRLP.html">IRLP page</a> for more linking information. (Note: corc.us currently lists the IRLP node as temporarily off the air.)
-        </p>
+                <p class="tight">Your membership also insures that the directors have the funds necessary to repair, update and keep the repeaters on the air. This includes utility bills and normal operating expenses and equipment upgrades and replacements. We gladly accept donations also. CORC is classified as a 501c3 charitable organization by the IRS so donations are tax deductible. Please check with your tax professional for more details.</p>
+                <p class="tight"><a href="https://corc.us/Webpage%20Feb%202012%20-%20501%20Status.pdf" target="_blank" rel="noopener">CORC's 501 (c)(3) donation Statement</a> (PDF)</p>
+                <p class="tight">Download an Acrobat Version of the Membership Application: <a href="https://corc.us/2026%20DUES%20SCHEDULE-Both.pdf" target="_blank" rel="noopener">CORC Membership Application (PDF)</a></p>
+            </div>
 
-        <p>
-            The CORC Tech Net meets every other Sunday at 7:30 PM on the 146.760 repeater (123.0 Hz PL) for discussion of ham radio topics on a technical level. All amateurs are welcome. See the <a href="./TechNet.html">Tech Net page</a> for the schedule and past presentations.
-        </p>
+            <div class="centered verdana">
+                <p><span class="red">A FREE Viewer IS available from</span> <a href="https://get.adobe.com/reader/" target="_blank" rel="noopener">Adobe Acrobat Reader</a></p>
+                <p style="margin-top: 30px;">Again, thank you for visiting our page. Please feel free to look around and browse the different links. If you have any questions please visit the <a href="./Contact.html">contact page</a> to find out how to communicate with us.</p>
+                <h2 class="big-red">Shop at Kroger's?</h2>
+                <p>Get <a href="https://corc.us/Kroger%20Rewards.png" target="_blank" rel="noopener">instructions on how to save at Kroger's</a> and help the club at the same time!</p>
+            </div>
 
-        <h2 class="section-heading">Meetings</h2>
+            <section class="centered" aria-labelledby="ve-title">
+                <h2 class="ve-heading" id="ve-title"><span>Central Ohio Radio Club</span> <span>sponsored ARRL VE Test Schedule for 2027</span></h2>
+                <p class="tahoma-18" style="margin: 0 0 6px;">The 2027 schedule will also be posted on the <a href="https://www.ae8fp.net/" target="_blank" rel="noopener">www.ae8fp.net</a> web site, where the most up-to-date information is published!</p>
+                <p class="tahoma-18" style="margin: 0;">All tests are held on Saturdays!</p>
+                <ul class="ve-dates">
+                    <li>January 16, 2027</li>
+                    <li>April 17, 2027</li>
+                    <li>June 26, 2027 (FIELD DAY)</li>
+                    <li>July 17, 2027</li>
+                    <li>October 16, 2027</li>
+                    <li>December 11, 2027 (&rsquo;Twas a HAM before Christmas)</li>
+                </ul>
+                <p class="tahoma-14" style="margin: 0 0 36px;">All sessions will be <span class="red">PRE-REGISTRATION ONLY</span>.</p>
+                <p class="tahoma-12" style="margin: 0 0 18px; padding: 0 10px;">It is now an FCC requirement to have an FCC FRN; active email address and active phone number before taking any exam. Please bring your FCC FRN, original license, a copy of your license (if a licensed ham), a valid photo ID and $15.00 - Cash preferred.</p>
+                <p class="tahoma-12 ve-underline" style="margin: 0 0 4px;">The following information is for <em>ALL</em> exam sessions:</p>
+                <p class="tahoma-12" style="margin: 0 0 6px; padding: 0 4px;">Effective April 19, 2022, the FCC will charge a $35.00 application fee for amateur radio licenses. The fee will apply to new, renewal, rule waiver, and modification applications that request a new vanity call sign. License upgrades will not have a fee applied. The fee will be per application. <em>VE's <span style="text-decoration: underline;">will not collect</span> the fees at exam sessions.</em></p>
+                <p class="tahoma-14 dark" style="letter-spacing: 0; margin: 0;">Time and location for these most of the dates are 10:00am at the<br />Westerville Fire Station #111,<br />400 W. Main St.<br />Westerville, Ohio.</p>
+                <p class="tahoma-14" style="margin: 0;">If you are homebound, and in need of a test team to make a visit, please contact Frank Piper through <a href="https://www.ae8fp.net/" target="_blank" rel="noopener">www.ae8fp.net</a> to make arrangements.</p>
+            </section>
 
-        <p>
-            Full Membership entitles you to use of the "CORC" repeaters, regular copies of the CORC Newsletter, and a vote at the Annual Meeting of the Corporation in the first quarter of the year. CORC also has two other meetings, one in spring and the other one in fall.
-        </p>
+            <section class="hamfest" aria-labelledby="hamfest-title">
+                <h2 id="hamfest-title">2027 COLUMBUS HAMFEST</h2>
+                <p class="b">More info at: <a href="https://aladdinshrine.org/hamfest/" target="_blank" rel="noopener">https://aladdinshrine.org/hamfest/</a></p>
+                <p class="b">Saturday, TBA, 2027</p>
+                <p class="b">8:00 am &ndash; 1:00 pm</p>
+                <p><span class="b">OUR 38th YEAR! This is an ARRL sanctioned event</span>.</p>
+                <p>Sponsored by:<br /><span class="b">The Aladdin Shrine Audio Unit &ndash; W8FEZ</span></p>
+                <p class="b">Talk-In W8FEZ 146.760 &ndash; PL 123.0</p>
+                <p><em>(Doors open at 6:00 am for vendor set-up)</em></p>
+                <p>Located at:<br /><span class="b">ALADDIN SHRINE CENTER</span></p>
+            </section>
+        </main>
 
-        <p>
-            <strong>Most recent meeting posted on corc.us:</strong> a pot-luck at Genoa Township Hall on Sunday, June 7, 2026 at 5 PM. Club members receive more information in a flyer in the newsletter, and all amateurs and friends are welcome. Read the <a href="https://corc.us/meeting%206-7-26.txt" target="_blank" rel="noopener">June 7, 2026 meeting notice</a> or get <a href="https://corc.us/meetmap.pdf" target="_blank" rel="noopener">directions to Genoa Township Hall (PDF map)</a>. If you are not yet a club member, contact the Membership Chairman, John Perone, W8RXX, through the <a href="./Contact.html">Contact page</a>.
-        </p>
-
-        <h2 class="section-heading">Membership and Donations</h2>
-
-        <p>
-            Your membership also ensures that the directors have the funds necessary to repair, update and keep the repeaters on the air. This includes utility bills, normal operating expenses, and equipment upgrades and replacements. We gladly accept donations also. CORC is classified as a 501(c)(3) charitable organization by the IRS, so donations are tax deductible. Please check with your tax professional for more details. Read <a href="https://corc.us/Webpage%20Feb%202012%20-%20501%20Status.pdf" target="_blank" rel="noopener">CORC's 501(c)(3) donation statement (PDF)</a>.
-        </p>
-
-        <p>
-            Ready to join? <a href="https://corc.us/2026%20DUES%20SCHEDULE-Both.pdf" target="_blank" rel="noopener">Download the CORC membership application (PDF)</a> or see the <a href="./Membership.html">Join Now page</a> for dues and details. A free PDF viewer is available from <a href="https://get.adobe.com/reader/" target="_blank" rel="noopener">Adobe Acrobat Reader</a>.
-        </p>
-
-        <p>
-            Shop at Kroger's? Get <a href="https://corc.us/Kroger%20Rewards.png" target="_blank" rel="noopener">instructions on saving at Kroger's while helping the club</a> at the same time!
-        </p>
-
-        <h2 class="section-heading" id="ve-testing">Central Ohio Radio Club sponsored ARRL VE Test Schedule for 2027</h2>
-
-        <p>
-            The 2027 schedule will also be posted on the <a href="https://www.ae8fp.net/" target="_blank" rel="noopener">www.ae8fp.net</a> website, where the most up-to-date information is published. All tests are held on Saturdays:
-        </p>
-        <ul class="content-list">
-            <li>January 16, 2027</li>
-            <li>April 17, 2027</li>
-            <li>June 26, 2027 (Field Day)</li>
-            <li>July 17, 2027</li>
-            <li>October 16, 2027</li>
-            <li>December 11, 2027 ('Twas a HAM before Christmas)</li>
-        </ul>
-        <p>
-            All sessions will be <strong class="red-text">pre-registration only</strong>. It is now an FCC requirement to have an FCC FRN, an active email address and an active phone number before taking any exam. Please bring your FCC FRN, original license, a copy of your license (if a licensed ham), a valid photo ID and $15.00 (cash preferred).
-        </p>
-        <p>
-            For all exam sessions: effective April 19, 2022, the FCC charges a $35.00 application fee for amateur radio licenses. The fee applies to new, renewal, rule waiver, and modification applications that request a new vanity call sign. License upgrades do not have a fee applied. The fee is per application. VEs will not collect the fees at exam sessions.
-        </p>
-        <p>
-            Time and location for most of these dates are 10:00 AM at Westerville Fire Station #111, 400 W. Main St., Westerville, Ohio. If you are homebound and in need of a test team to make a visit, please contact Frank Piper, AE8FP, through <a href="https://www.ae8fp.net/" target="_blank" rel="noopener">www.ae8fp.net</a> or the <a href="./Contact.html">Contact page</a> to make arrangements.
-        </p>
-
-        <h2 class="section-heading">2027 Columbus Hamfest</h2>
-
-        <p>
-            Saturday, date TBA, 2027, 8:00 AM &ndash; 1:00 PM at the Aladdin Shrine Center (doors open at 6:00 AM for vendor set-up). Our 38th year! This is an ARRL sanctioned event sponsored by the Aladdin Shrine Audio Unit, W8FEZ. Talk-in on W8FEZ 146.760, PL 123.0. More information is on the <a href="https://aladdinshrine.org/hamfest/" target="_blank" rel="noopener">Aladdin Shrine Columbus Hamfest page</a>.
-        </p>
-
-        <h2 class="section-heading">Officers</h2>
-
-        <ul class="content-list">
-            <li>President: Anthony (Tony) Fabro, N8RRB</li>
-            <li>Secretary: Frank Piper, AE8FP</li>
-            <li>Treasurer: Steve Robeano, WD8JKX</li>
-            <li>Technical: Chuck Wood, WA8KKN</li>
-            <li>IRLP: Joe Hahn, W8NBA</li>
-            <li>Newsletter: Joe Hahn, W8NBA</li>
-            <li>Membership: John Perone, W8RXX</li>
-        </ul>
-        <p>Reach any officer through the <a href="./Contact.html">Contact page</a>.</p>
-
-        <p>
-            Again, thank you for visiting our page. Please feel free to look around and browse the different links. If you have any questions, please visit the <a href="./Contact.html">Contact page</a> to find out how to communicate with us.
-        </p>
-    </main>
-
-    <footer>
-        <p>The Central Ohio Radio Club, Inc. &middot; P.O. Box 166, Sunbury, OH 43074 &middot; Club callsign W8AIC &middot; 501(c)(3) charitable organization</p>
-        <p>Questions about the website? Email the <a href="mailto:webmaster@corc.us?subject=CORC%20Inquiry">CORC webmaster</a> or visit the <a href="./Contact.html">Contact page</a>.</p>
-        <p class="source-note">Content on this page was copied from <a href="https://corc.us/">https://corc.us/</a>, <a href="https://corc.us/page5.html">https://corc.us/page5.html</a>, <a href="https://corc.us/page6.html">https://corc.us/page6.html</a>, <a href="https://corc.us/page8.html">https://corc.us/page8.html</a> on October 30, 2026. Dates shown are as posted there.</p>
-    </footer>
+        <footer class="site-footer">
+            <p>Last Minor Up-Dated <span class="date">03/18/22</span></p>
+            <p>Maintained by Joe Hahn, W8NBA</p>
+            <p>For info contact the</p>
+            <p><a href="mailto:webmaster@corc.us?subject=CORC%20Inquiry">WEBMASTER</a></p>
+            <p class="copyright">&copy; 2000 - 2027 All Rights Reserved</p>
+        </footer>
+    </div>
 </body>
 </html>
